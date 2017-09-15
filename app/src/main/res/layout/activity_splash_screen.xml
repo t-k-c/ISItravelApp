@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="biz.diginov.isitravel.activities.SplashScreen"
+    tools:ignore="MissingPrefix">
+
+    <include
+        layout="@layout/background_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_splash_1" />
+
+        <LinearLayout
+            android:id="@+id/name_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:transitionName="app-name">
+
+            <TextView
+                android:id="@+id/tv_isi"
+                fontPath="fonts/Bariol-Regular-Italic.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISI"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="124sp" />
+
+            <TextView
+                android:id="@+id/tv_travel"
+                fontPath="fonts/Bariol-Regular-Italic.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="travel"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/colorAccent"
+                android:textSize="124sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/left_line"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/center_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_dot"
+                android:tint="@android:color/white" />
+
+            <View
+                android:id="@+id/right_line"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_slogan"
+            fontPath="fonts/RobotoCondensed-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/slogan"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="48sp" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loading_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:indicatorName="BallPulseIndicator" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ISItravel</string>
+    <string name="slogan">Much more than a trip!</string>
+    <string name="username">Username</string>
+    <string name="err_username">The username field is required</string>
+    <string name="err_password">The code must be at least 4 characters</string>
+</resources>

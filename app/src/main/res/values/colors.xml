@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#136a8a</color>
+    <color name="colorPrimaryDark">#0e5068</color>
+    <color name="colorAccent">#92fe9d</color>
+    <color name="yellow">#fcee21</color>
+
+    <color name="completedTint">#00ffff</color>
+    <color name="overdueTint">#fbb03b</color>
+    <color name="uncompletedTint">#ed1e79</color>
+</resources>
